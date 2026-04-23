@@ -57,6 +57,7 @@ export default function App() {
       setSquares(nextSquares);
       setXIsNext(!xIsNext);
       setNumMoves(numMoves+0.5);
+      setSelectedPieceIndex(null);
     }
   }
 
