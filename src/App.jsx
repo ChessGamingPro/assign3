@@ -32,13 +32,13 @@ export default function App() {
       setNumMoves(numMoves+0.5);
     }
 
-    else if(!selectedPieceIndex) { //3 moves done, piece not selected
+    else if(selectedPieceIndex == null) { //3 moves done, piece not selected
       if(xIsNext && squares[i]=='X') setSelectedPieceIndex(i);
       else if(!xIsNext && squares[i]=='O') setSelectedPieceIndex(i);
       else return; //invalid square selected (doesn't corrsepond to player or empty)
     }
 
-    else if(selectedPieceIndex) { //3 moves done, piece selected
+    else if(selectedPieceIndex != null) { //3 moves done, piece selected
       if(squares[i] || !isAdjacent(selectedPieceIndex, i)) { //square is taken or not adjacent
         setSelectedPieceIndex(null); //reset move
         return; 
@@ -69,7 +69,7 @@ export default function App() {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
   let selectedStatus;
-  if(selectedPieceIndex) selectedStatus = "Square " + (selectedPieceIndex+1) + " selected."
+  if(selectedPieceIndex != null) selectedStatus = "Square " + (selectedPieceIndex+1) + " selected."
   else selectedStatus = "No square selected"
 
   return (
