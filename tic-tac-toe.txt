@@ -2,3 +2,13 @@ Installed WSL and turned on Windows Subsystem for Linux
 Installed Docker
 Installed Git, Node, and Python 
 Installed WSL extension on VSCode
+Followed React tutorial to build tic tac toe
+    Created the state variables
+    Created square component
+    Created event handler functions
+    Implemented click handler:
+        Wrote the function to check if the game has been won
+        Implemented check for if game has been won or if piece already exists
+        Implemented placing pieces based on player turn
+        Updated state variables
+    Implemented status (player turn) display 

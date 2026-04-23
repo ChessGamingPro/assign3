@@ -1,0 +1,11 @@
+After building tic tac toe:
+
+Implemented numMoves state for the basic logic change after 3 moves are played in handleClick()
+Moved old tic tac toe into the condition numMoves < 3.0
+Implemented piece selection with another state variable
+Implemented how to select a piece after 3 moves
+Implemented how square selection works after piece has been selected
+    Created function to check if squares are adjacent, manually recorded adjacent squares in an array
+    Implemented basic moving functionality
+    Implemented check when center square is occupied by player
+Implemented status updates for when a square is selected and the number of moves, for both testing and normal gameplay
